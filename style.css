@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f2f2f2;
+  transition: 0.3s;
+}
+
+.dark {
+  background: #121212;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  color: white;
+  padding: 15px;
+}
+
+header input {
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.slider {
+  height: 100px;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.price-filter {
+  text-align: center;
+  margin: 5px;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: -40px;
+  justify-items: center;
+}
+
+.card {
+  width: 280px;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.dark .card {
+  background: #1e1e1e;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+/* Текст */
+.card h3 {
+  margin: 10px 0 5px;
+}
+
+.card p {
+  color: gray;
+}
+
+/* Кнопка */
+.buy {
+  margin-top: 10px;
+  background: linear-gradient(45deg, #00c853, #64dd17);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.buy:hover {
+  transform: scale(1.05);
+}
+
+/* Лайк */
+.like {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  border-radius: 50%;
+  padding: 5px 8px;
+}
